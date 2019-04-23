@@ -1,20 +1,24 @@
 #include <stdio.h>
 
-int calcsoma(int a, int b){
-int i, soma;
-for (i=a+1; i<b; i++) { 
-i +=soma;
-}
-}
+int somaInteiro(int soma);
 int main(){
-	int i,n1, n2, soma;
-	printf("\nEntre com o primeiro numero:\n");
-	scanf("%d",&n1);
+	int c, soma;
+
+	c = somaInteiro(soma);
+			
+	printf("A soma dos inteiros entre eles eh: %d",c);
+			
+}
+int somaInteiro(int soma){
+	int i, a, b;
 	
-	printf("\nEntre com o segundo numero:\n");
-	scanf("%d",&n2);
+	printf("Entre com o n1:");
+	scanf("%d",&a);
+	printf("Entre com o n2:");
+	scanf("%d",&b);
 	
-	printf("Soma = %d",soma);
-		
-	return 0;
+	for (i=a+1;i<b;i++){
+		soma += i;
+	}
+	return soma;	
 }

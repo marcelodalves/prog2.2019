@@ -5,7 +5,7 @@ struct funcionario{
 	char nome[500];
 	int idade;
 	char sexo[30];
-	int cpf;
+	char cpf[30];
 	char data[10];
 	int setor;
 	char cargo[30];
@@ -49,7 +49,8 @@ fflush(stdin);
 printf("Entre com o salario:");
 scanf("%f",&func.salario);
 
-printf("O funcionario %s tem %d anos, nasceu no dia %s e eh do sexo %s. Seu CPF eh %s, seu Codigo do Setor eh %d, seu cargo eh %s e seu salario eh ",func.nome,func.idade,func.data,func.sexo,func.cpf,func.setor,func.cargo);
+fflush(stdin);
+printf("O funcionario %s tem %d anos, nasceu no dia %s e eh do sexo %s. Seu CPF eh %s , seu Codigo do Setor eh %d, seu cargo eh %s e seu salario eh %f",func.nome,func.idade,func.data,func.sexo,func.cpf,func.setor,func.cargo,func.salario);
 
 system("pause");
 return 0;
